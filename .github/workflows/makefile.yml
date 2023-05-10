@@ -17,11 +17,11 @@ jobs:
     - name: cd to directory basic_loader
       run: cd basic_loader
 
-    - name: run make_a23
-      run: ./make_a23
+    - name: Make boot0
+      run: make -f make_a23 clean -C boot0; make -f make_a23  -C boot0
       
-    - name: make_all
-      run:  make all
+    - name: Make fes1
+      run:  make -f make_a23 clean -C fes1; make -f make_a23  -C fes1
 
 #    - name: Run check
 #      run: make check
