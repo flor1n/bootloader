@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: configure
-      run: ./configure
+      run: ./basic_loader/make_a23
 
     - name: Install dependencies
       run: make
