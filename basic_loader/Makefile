@@ -1,1 +1,2 @@
-
+make -f make_a23 clean -C boot0; make -f make_a23  -C boot0
+make -f make_a23 clean -C fes1; make -f make_a23  -C fes1
